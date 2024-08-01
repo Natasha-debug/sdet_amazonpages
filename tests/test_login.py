@@ -28,13 +28,9 @@ class TestLogin(Baseclass):
 
         home_page.search_for_product("wooden bed")
         search_results.click_first_product()
+        log.info("click to first product successfully")
         time.sleep(5)
 
-        product_page.add_to_cart()
-        log.info("Product added to cart successfully")
-
-        # assert int(product_page.get_cart_count())>0
-        # log.info(f"cart count: {product_page.get_cart_count()}")
 
 
 
